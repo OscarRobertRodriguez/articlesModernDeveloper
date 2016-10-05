@@ -86,8 +86,7 @@ In the above code we see that there is a global variable with the same name as t
 Had we used an expression or a declartion it would not be safe and we would end up with "I'm global oscar" instead.
 
 
-[Checkout this Jsbin for a summary of all the functions used in this article](https://jsbin.com/gawojep/edit?js,console)
-
+<a href="https://jsbin.com/gawojep/edit?js,console" class="btn btn-link" target="_blank" style="font-size:16px">Checkout this Jsbin to show this example</a><br>
 
 <h1 style="color: #3CCAE6">Summary</h1>
 We covered a lot but hopefully you have a better understanding of self-invoking functions and why they are so useful when it comes to building modular code.
