@@ -1,6 +1,10 @@
 ---
-published: false
+layout: post
+title:  "Variable Hoisiting"
+categories: jekyll update
 ---
-## A New Post
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+### Question:
+Describe what JavaScript variable hoisting is and its significance in how and where variables should be declared. Use at least one example to demonstrate variable hoisting.
+
+<hr>
