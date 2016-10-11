@@ -9,7 +9,7 @@ Explain what an HTML `inline-block` element is, give an example of how to make a
 
 <hr>
 
-Before we discuss what `inline-block` means let's talk about the flow in a HTML document in relation to inline and block elements. When we make a webpage we have our basic structure like shown below.
+Before we discuss what `inline-block` means let's talk about the flow in an HTML document in relation to inline and block elements. When we make a web page we have our basic structure like shown below.
 
 ```html
 <!DOCTYPE html>
@@ -42,7 +42,7 @@ Now we might add an `h1` tag and a couple of paragraphs with some links and span
 
 <h1 style="color:#3CCAE6">Block Elements</h1>
 
-Each element has a default display value the `p, div, form, h1-h6` tags display as a block elements among others. This means they stack on top of each other in the document - each element on its own line.
+Each element has a default display value the `p, div, form, h1-h6` tags display as block elements among others. This means they stack on top of each other in the document - each element on its own line.
 However other elements
 
 <img src="../images/block and inline.png" height="300px" style="width: 600px;margin: 0 auto;display: block;">
@@ -53,7 +53,7 @@ Every block you see above is a "block" element taking the full width and each on
 * Can have margins and padding
 * Will expand naturally to let child elements fit unless height is specified
 * will be placed below previous elements in the document
-* ingores the vertical align property
+* ignores the vertical-align property
 
 
 <h1 style="color:#3CCAE6">Inline Elements</h1>
@@ -67,13 +67,13 @@ Inline elements are the `img,a,span` tag in the example being the most common. L
 * ignores width and height properties
 * if floated will become a block element
 
-The diffence between block and inline elements is that block builds the structure while inline blocks are more text-based. Now that we got the basics down you might be wondering
+The difference between block and inline elements is that block builds the structure while inline blocks are more text-based. Now that we got the basics down you might be wondering
 where `inline-block` fits in.
 
 <h1 style="color:#3CCAE6">Whats up with Inline-block?</h1>
 
 
-If an inline and block element had a baby we would get an inline-block. Elements with this box behave as though they where inline but we can set width and height, top and bottom
+If an inline and block element had a baby we would get an inline-block. Elements with this box behave as though they were inline but we can set width and height, top and bottom
 margins and padding. This can be useful in making navigation bars and creating layouts that you would normally use floats for which we will demonstrate in a moment.
 
  The way this is achieved is by using the `display` property to change the default box
@@ -97,7 +97,7 @@ data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="
 by oscar (<a href="http://codepen.io/nopity">@nopity</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-The code pen above illustrates the usefulness of `inline-block` instead of the alternative use of floats to create navigation bar.
+The code pen above illustrates the usefulness of `inline-block` instead of the alternative use of floats to create a navigation bar.
 
 <br>
 <div class="alert alert-dismissible alert-info">
