@@ -12,7 +12,7 @@ Describe what JavaScript variable hoisting is and its significance in how and wh
 <h1 style="color:#3CCAE6">Execution Context</h1>
 
 Before you can understand what hoisting is you must first understand how the JavaScript engine reads the code you write. When you run your code
-what happens behind the scenes is an excution context is created. There are two phases to this execution context: the creation phase and the execution phase.
+what happens behind the scenes is an execution context is created. There are two phases to this execution context: the creation phase and the execution phase.
 
 <img src="../images/executionContext.png" style="width: 500px; height:300px; margin:20px auto; display: block;">
 
@@ -24,12 +24,12 @@ Now this brings us to the the last part of the creation phase:
 
 <h1 style="color:#3CCAE6">Variable Hoisiting</h1>
 
-For our purposes we are going to focus on the global scope when it comes to the execuion context for this article.
+For our purposes, we are going to focus on the global scope when it comes to the execution context for this article.
 It's not just variables that get hoisted but also functions but the difference lies in how JavaScript holds them in memory. During the creation phase, JavaScript reads through the code
-gathering all the variables and functions in the global scope and sets them to memory. Variables get set to `undefined` in memory while functions are put in meomory in their entirety.
+gathering all the variables and functions in the global scope and sets them to memory. Variables get set to `undefined` in memory while functions are put in memory in their entirety.
 It's only when the code starts being read line by line in the execution phase that variables are given their value.
 
-This is were things can go wrong because if you try to do anything with a variable before it has been parsed your going to get `undefined`.
+This is where things can go wrong because if you try to do anything with a variable before it has been parsed you're going to get `undefined`.
 
 <a href="http://jsbin.com/mikire/edit?js,console" class="btn btn-link" target="_blank" style="font-size:16px">Checkout this Jsbin to show this example</a><br>
 
@@ -48,7 +48,7 @@ console.log(a); // log a over here and we get what we expect
 ```
 
 This example shows why we can't rely on JavaScript hoisting when it comes to variables and should not use variables in the global scope if possible for this reason.
-If you must use global variables declare them at the top of your code but this goes with all your code even the variables in your function should be declared at the top of there lexical scope
+If you must use global variables declare them at the top of your code but this goes with all your code even the variables in your function should be declared at the top of their lexical scope
 to avoid this problem.
 
 <h1 style="color:#3CCAE6">Summary</h1>
