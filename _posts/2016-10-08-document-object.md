@@ -18,13 +18,13 @@ Describe the function of the `document` object and use examples to demonstrate i
 
 <br>
 
-We use the `document` object to reference the document in the browser window. It sits at the top of any DOM tree so this makes it the parent to all nodes. Because of this we can use the `document` object with properties and methods to target any element on a webpage. 
+We use the `document` object to reference the document in the browser window. It sits at the top of any DOM tree so this makes it the parent to all nodes. Because of this, we can use the `document` object with properties and methods to target any element on a webpage. 
 
 <h1 style="color:#3CCAE6">Live By Example</h1>
 
 There are various methods and properties available to the document object I will go over a few. 
 
-Here is a run down of some example uses :
+Here is a rundown of some example uses :
 
 ```javascript
 // returns the number of images in the document
@@ -37,19 +37,18 @@ document.forms[];
 
 document.forms['loginForm'].elements['userName'];
 
-// allows to reference an element by using it's id for reference
+// allows referencing an element by using its id for reference
 
 document.getElementById("mainHeading");
 
 ```
 
-As you can see we use the `document` object frequently in the DOM which befits it since DOM stands for "Document Object Model". This is the peaunt butter and jelly without it we would have a much hard time manipulating the DOM. 
+As you can see we use the `document` object frequently in the DOM which befits it since DOM stands for "Document Object Model". This is the peanut butter and jelly without it, we would have a much hard time manipulating the DOM. 
 
 <h1 style="color:#3CCAE6">Summary</h1>
 
-We describe the purpose of the `document` object and while brief surely it has given you a good idea how it is used when going through the DOM. Think of it this way if you need to find something in the DOM always start it with the `document` object just like you always end a sentence with a period. 
+We describe the purpose of the `document` object and while brief surely it has given you a good idea how it is used when going through the DOM. Think of it this way if you need to find something in the DOM always starts it with the `document` object just like you always end a sentence with a period. 
 
 <br>
 <br>
-
 
