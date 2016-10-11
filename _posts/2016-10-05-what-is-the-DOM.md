@@ -11,8 +11,8 @@ Describe what the DOM is and explain its function.
 
 <h1 style="color:#3CCAE6">What's the DOM?</h1>
 
-The DOM(document object model) was invented by Netscape in the mid 90's to speed up page rendering and allow developers to manipulate nodes on the webpage.
-Think of the DOM as an upside down tree; each individual element being a node, that is branched all the way down.
+The DOM(document object model) was invented by Netscape in the mid 90's to speed up page rendering and allow developers to manipulate nodes on the web page.
+Think of the DOM as an upside-down tree, each individual element being a node, that is branched all the way down.
 
 ```html
 <html>
@@ -29,12 +29,12 @@ The code above translated to DOM format.
 <img src="../images/domTree.png" style="width: 600px; height:400px; margin:20px auto; display:block;">
 
 We start with the document node which is always at the top progressing down till we get to the individual element nodes of h1 and the two p tags. As you may have noticed even the
-text have their own nodes. All of this allows us to add or change these values with any scripting language. In our case that language is JavaScript which really makes the DOM come to life.
+text have their own nodes. All of this allows us to add or change these values with any scripting language. In our case, that language is JavaScript which really makes the DOM come to life.
 
 
 <h1 style="color:#3CCAE6">Live By Example</h1>
 
-You might be wondering by now ok cool so how would I acutually change something on a page using the DOM. Well there alot more to it then a few commands but I'll give you a taste of what can be
+You might be wondering by now ok cool so how would I actually change something on a page using the DOM. Well there a lot more to it then a few commands but I'll give you a taste of what can be
 done.
 
 ```html
@@ -51,7 +51,7 @@ done.
 </body>
 </html>
 ```
-Now in the DOM we have "New Content!" with in the div. Now you won't see these changes in the example provdied below  but if you run this code in a browser you will see this text appear.
+Now in the DOM we have "New Content!" within the div. Now you won't see these changes in the example provided below  but if you run this code in a browser you will see this text appear.
 
 <a href="http://jsbin.com/dojito/edit?html,js,console" class="btn btn-link" target="_blank" style="font-size:16px">Checkout this Jsbin to show this example</a><br>
 
