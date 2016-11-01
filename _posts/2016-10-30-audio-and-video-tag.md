@@ -9,70 +9,318 @@ Describe the `audio` and `video` tags and how they enhance the user experience. 
 
 <hr>
 
- <h1 style="color:#3CCAE6">Audio tag</h1>
+ <h1 style="color:#3CCAE6">Audio Tag</h1>
 
- Audio can add depth to a site by giving the user an experience more aligned with our media center world nowadays with some notable examples such as Pandora, for our purposes our examples will be much simple.
+ Audio can add depth to a site by giving the user an experience more aligned with our media center world nowadays with some notable examples such as Pandora, for our purposes our examples will be simple.
 
- <audio src="https://www.dropbox.com/s/1vsvv1gwm8sxstr/butthead.mp3?dl=0" controls="controls" >
- </audio> 
+This is an example of the basic syntax for the audio tag :
 
- <h2 style="color:#3CCAE6"> The appendChild() Method</h2>  
+**Audio Tag Syntax :**
 
- Using the appendChild method we can add any element we want to the DOM, we do this using an `onClick` function that will add an item to a shopping cart when we click on it. However, to do this we must first create that item and text we would like first. We do this using the `createElement` and `createTextNode`.
-
-```javascript
-// creates a li element node
-var li_node = document.createElement("li");
-
-// creates a text node 
-var text_node = document.createTextNode("WaterMelon $50")
+```html
+<audio src="../audio/butthead.mp3" controls>
+<p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
 ```
+<br>
 
- Now that we have created are list element and text we can use the appendChild to add the text to the li element. 
+Starts off with the audio tag which takes an attribute of `src` which points to where that sound file is. Then we have `controls` , this gives us the panel to press play and pause. The audio won't work because the audio file doesn't exits, I just wanted to give you an idea of what it will look like. 
 
-```javascript
-// the text gets added to the list node
-li_node.appendChild(text_node);
-```
+**Result:**
 
-Finally, let's add this li node to the ul element with the id = "shopList". 
-
-```javascript
-// Now we have added the li node withe the text to the ul parent
-document.getElementById("shopList").appendChild(li_node);
-```
-
-This was pretty magical but it leaves a lot to be desired, let's add a real working example to show how we could use it in real life. 
-
-
-<p data-height="265" data-theme-id="0" data-slug-hash="JRvKVk" data-default-tab="js,result" data-user="nopity" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/nopity/pen/JRvKVk/">shopping Cart</a> by oscar (<a href="http://codepen.io/nopity">@nopity</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
-It's a simple example but shows how all the pieces come together. 
-
-
-<h2 style="color:#3CCAE6"> The innerHTML Method</h2>  
-
-The innerHTML method allows us to read the contents of what's in between an element tag and we can change the contents by using this property. 
-
-```javascript
-var domLevels = document.querySelector("#List")
-
-// read- mode
-output_before = domLevels.innerHTML;
-
-// write mode 
- domLevels.innerHTML = "<li>Yes its a lovely day</li>"
-```
-
-Here we show the different modes. The read mode output may look similar to the write mode but keep in mind it doesn't change the content of the element it just returns that content. 
+<audio src="../audio/butthead.mp3" controls>
+<p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
 
 <br>
 
- <h1 style="color:#3CCAE6">Removing from the DOM</h1>
 
- There is one method that is used mostly to remove markup:
 
-  <h2 style="color:#3CCAE6"> The removeChild() Method</h2> 
 
-Using this we can remove children element say from a list or a paragraph. The syntax for this is similar to the `appendChild` method used earlier.
+
+
+
+ <h2 style="color:#3CCAA1">Audio Formats</h2>
+
+In the above example we use an .mp3 audio file but this isn't a great idea when using in a live site becasue not all users will be able to hear it if their on a browser that doesn't support it.
+
+Three types of audio formats are used on the web they are: MP3, Ogg, and Wav. They all do the same thing but the .wav is uncompressed so you only want to use this type when you small file sizes anything else use the other two. 
+
+This brings up an important point, if .mp3 files arent' supported on all browsers and .wav isn't always going to be the best option then what. Well you can combine the file types much like you do with the font-family property to give a back up if that audio type isn't supported in that browser. 
+
+**Syntax for multiple file types:** 
+
+```html
+<audio> 
+  <source src="WhiteChristmas.mp3">   <!-- first file will play if supported -->
+
+  <source src="WhiteChristmas.ogg">   <!-- second file will play if first not supported -->
+
+  <p>Your browser does not support this audio file. Try a different browser</p>   
+    <!--The paragarph will pop up if neither file type are supported  -->
+</audio>
+```
+<br>
+
+<table class="table table-striped">
+      <caption style="font-weight: bold;text-align: center;color: black;font-size: 20px; text-transform: uppercase;">Browser Support for audio formats</caption>
+    <thead>
+        <tr>
+            <th style="text-align: center;">
+                Browser
+            </th>
+            <th style="text-align: center;">
+                .mp3
+            </th>
+            <th style="text-align: center;">
+                .ogg
+            </th>
+            <th style="text-align: center;">
+                .wav
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Internet Explorer</th>
+            <td style="text-align: center;">
+                yes
+            </td>
+            <td style="text-align: center;">
+                no
+            </td>
+            <td style="text-align: center;">
+                no
+            </td>
+        </tr>
+        <tr>
+            <th>Chrome</th>
+            <td style="text-align: center;">
+                yes
+            </td>
+            <td style="text-align: center;">
+                yes
+            </td>
+            <td style="text-align: center;">
+                yes
+            </td>
+        </tr>
+        <tr>
+           <th>Firefox</th>
+            <td style="text-align: center;">
+                yes
+            </td>
+            <td style="text-align: center;">
+                yes
+            </td>
+            <td style="text-align: center;">
+                yes
+            </td>
+        </tr>
+        <tr>
+           <th>Safari</th>
+            <td style="text-align: center;">
+                yes
+            </td>
+            <td style="text-align: center;">
+                no
+            </td>
+            <td style="text-align: center;">
+                yes
+            </td>
+        </tr>
+          <tr>
+            
+               <th> Opera</th>
+        
+            <td style="text-align: center;">
+                yes
+            </td>
+            <td style="text-align: center;">
+                yes
+            </td>
+            <td style="text-align: center;">
+                yes
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+Let's show one last audio clip. What movie is this audio clip from? 
+
+
+```html
+<audio controls>
+  <source src="../audio/style.wav" controls></source>
+  <source src="audio/beep.ogg" controls></source>
+  Your browser isn't invited for super fun audio time.
+</audio>
+```
+
+**Result:**
+<audio controls>
+  <source src="../audio/style.wav" controls></source>
+  <source src="audio/beep.ogg" controls></source>
+  Your browser isn't invited for super fun audio time.
+</audio>
+
+
+ <h1 style="color:#3CCAE6">Video Tag</h1>
+
+Now we have the video tag to talk about but what better way to talk about then show video. The examples below illustrate some ways they can be used. The most popular examples of this tag would be Youtube although they use a lot JavaScript to get the videos to do more cool stuff.
+
+
+Code: 
+
+```html
+<div style="text-align: center;">
+<video autoplay loop  width="400px" >
+<source src="../video/624073109.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+```
+
+
+Video with loop and autoplay without controls:
+
+<div style="text-align: center;">
+<video autoplay loop  width="400px" >
+<source src="../video/624073109.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+Code: 
+
+```html
+<div style= "text-align: center;">
+<video autoplay   width="400px" controls>
+<source src="../video/624073109.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+```
+
+
+Video without loop. With autoplay and controls:
+
+<div style= "text-align: center;">
+<video autoplay   width="400px" controls>
+<source src="../video/624073109.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+
+
+Code: 
+
+```html
+<div style= "text-align: center;">
+<video autoplay   width="400px" controls>
+<source src="../video/624073109.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+```
+
+Video without autoplay with controls:
+
+<div style= "text-align: center;" >
+<video width="400px" controls>
+<source src="../video/624073109.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+<br>
+
+<table class="table table-striped">
+      <caption style="font-weight: bold;text-align: center;color: black;font-size: 20px; text-transform: uppercase;">Browser Support for video formats</caption>
+    <thead>
+        <tr>
+            <th style="text-align: center;">
+                Browser
+            </th>
+            <th style="text-align: center;">
+                MP4
+            </th>
+            <th style="text-align: center;">
+                WebM
+            </th>
+            <th style="text-align: center;">
+                Ogg
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Internet Explorer</th>
+            <td style="text-align: center;">
+                yes
+            </td>
+            <td style="text-align: center;">
+                no
+            </td>
+            <td style="text-align: center;">
+                no
+            </td>
+        </tr>
+        <tr>
+            <th>Chrome</th>
+            <td style="text-align: center;">
+                yes
+            </td>
+            <td style="text-align: center;">
+                yes
+            </td>
+            <td style="text-align: center;">
+                yes
+            </td>
+        </tr>
+        <tr>
+           <th>Firefox</th>
+            <td style="text-align: center;">
+                yes
+            </td>
+            <td style="text-align: center;">
+                yes
+            </td>
+            <td style="text-align: center;">
+                yes
+            </td>
+        </tr>
+        <tr>
+           <th>Safari</th>
+            <td style="text-align: center;">
+                yes
+            </td>
+            <td style="text-align: center;">
+                yes
+            </td>
+            <td style="text-align: center;">
+                yes
+            </td>
+        </tr>
+          <tr>
+            
+               <th> Opera</th>
+        
+            <td style="text-align: center;">
+                yes
+            </td>
+            <td style="text-align: center;">
+                yes
+            </td>
+            <td style="text-align: center;">
+                yes
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+ <h1 style="color:#3CCAE6">Summary</h1>
+
+ This was a quick article showing the video and audio tags and what can be done with them. This is by means no mean an extensive look into these tags but covers the basics. 
