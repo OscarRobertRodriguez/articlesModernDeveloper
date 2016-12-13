@@ -13,3 +13,19 @@ When you think of HTTP methods think of it as a way for a client and server to c
 
 
 <h3 style="color:#3CCAE6">GET</h3>
+
+The GET method is used to request data from a server that it wants. 
+
+<h3 style="color:#3CCAE6">HEAD</h3>
+
+The HEAD is similar to GET in that it request specified resource to be sent back but the difference is that it does not get the body of information back but just the heading. This is useful if you just want to know if the info exist before you use the GET method. 
+
+<h3 style="color:#3CCAE6">POST</h3>
+This method is used to send data to the server that will in effect modify the server in some way as in the holding of new information
+
+<h3 style="color:#3CCAE6">PUT</h3>
+
+This method is used to show what ways we can communicate with a server. If we send an options request to a specific server than we will receive back that we can use GET,HEAD, or POST for example. 
+
+
+

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "HTTP Methods"
+title:  "MAC and IP address"
 categories: jekyll update
 ---
 ### Question:
@@ -13,3 +13,5 @@ When you think of HTTP methods think of it as a way for a client and server to c
 
 
 <h3 style="color:#3CCAE6">GET</h3>
+
+ajhsdjasd
