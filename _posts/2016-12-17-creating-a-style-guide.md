@@ -12,7 +12,7 @@ List and explain the steps for creating a style guide.
 <h1 style="color:#3CCAE6">How to make a style Guide</h1>
 
 
-The first ingredient to making a style guide is to use carrots-just kidding not carrots - but what we need is a ingredient list so let's do that. 
+The first ingredient to making a style guide is to use carrots-just kidding not carrots -but what we need is a ingredient list so let's do that. 
 
 
 <div style="border: 1px dashed green; padding: 20px;background-color:lightblue">

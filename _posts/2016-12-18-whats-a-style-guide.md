@@ -1,6 +1,11 @@
 ---
-published: false
+layout: post
+title:  "Why Use Style Guides"
+categories: jekyll update
 ---
-## A New Post
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+### Question:
+Describe what a style guide is. Explain some of the problems having a style guide solves and the scenarios in which a style guide is most appropriate.
+
+
+<h1 style="color:#3CCAE6">What's a Style Guide</h1>
