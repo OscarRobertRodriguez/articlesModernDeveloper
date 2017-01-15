@@ -33,3 +33,6 @@ Describe the function of the `font-variant` property and explain the different v
     font-variant:small-caps; /* most of the time you wont use normal value */
 } 
 ```
+
+<br>
+<br>
