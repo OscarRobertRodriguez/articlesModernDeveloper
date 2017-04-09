@@ -42,7 +42,7 @@ Describe the function of the `box-sizing` property and explain the different val
 
 <hr>
 
- <h1 style="color:#3CCAE6">What's the function?</h1>
+ <h1 style="color:#3CCAE6">Changing the Box Model With Box-Sizing</h1>
 
 
 The box-sizing property takes two values :
@@ -51,7 +51,7 @@ The box-sizing property takes two values :
 box-sizing: content-box | border-box; 
 </code>
 
-The `content-box` value is the default behavior of an elements height and width. What this means is that if you add any padding or border that will get added to with width or height expanding the box to a height or width that you didn't want, for example :
+The `content-box` value is the default behavior of an elements height and width. It adds the border and padding to the width and height of the element. As you can see from the example below even though we set the width and height to 300px we now have a div that is far bigger than what we wanted.   
 
 ```css
  .box {
@@ -67,7 +67,7 @@ The `content-box` value is the default behavior of an elements height and width.
 <div class="box"><p>content-box</p></div>
 <br>
 
-<p>Now normally we wouldn't have to put box-sizing if we were going to use the content-box because this is the default behavior. So because of the additive quality of this property we would get a width of 360px and a height of 330px which makes things more complicated when we want specific sizes.</p> 
+Sites started becoming more fluid or as we would say now adays responsive so there needed to be a way to have the width we set to be that actual width. `border-box` to the rescue. Now the border and padding aren't added to the width we set so what width we set is the width we get.  
 
 
 ```css
@@ -86,8 +86,17 @@ The `content-box` value is the default behavior of an elements height and width.
 
 <br><br>
 
+Because box-sizing has become the default way to style most sites there needs to be a way to target all the elements and set them to this border-box sizing.
 
-With `border-box` we subtract the padding and border from our width and height so we would do 300 - 60 = 240px width and height. 
-As you can see we have a huge difference in the widths and heights of the boxes even though we have the same widths and heights set on both, only difference being the box-sizing which makes more sense most of the time the content-box. 
+```css
+<!-- this will set all elements to border-box -->
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+```
+
+
+
+
 
 

@@ -17,7 +17,7 @@ categories: jekyll update
   }
 
   .square1 {
-    opacity: 1;
+   
     width:100px;
     height: 100px;
     background-color: red;
@@ -30,7 +30,6 @@ categories: jekyll update
  
 
 .square2 {
-    opacity: 1;
     width:100px;
     height: 100px;
     background-color: red;
@@ -47,7 +46,7 @@ categories: jekyll update
     width:100px;
     height: 100px;
     background-color: red;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease;
 }
 
 
@@ -105,7 +104,6 @@ The opacity in this code is the transition-property value which can be a single 
 
 ```css
    .square1 {
-    opacity:1; 
     border:none;
     width:100px;
     height: 100px;
@@ -128,13 +126,12 @@ If you hover over the square it disappers but it doesn't really have that animat
 
 <h3 style="color:#3CCAE6">transition-duration</h3>
 
- This value allows us to set a time for the transition to from start to finish. In the previous example we didnt have this value set so it is set to zero and the animation happens instantaneous. The time is written as a number trailed with an s for example `1s` would run the animation for one second. Now let's update the code to add duration. 
+ This value allows us to set a time for the transition from start to finish. In the previous example we didnt have this value set so the animation happens instantaneous. This time it is written as a number trailed with an s for example `1s` would run the animation for one second. Now let's update the code to add duration. 
 
 **Code**
 
 ```css
  .square1 {
-    opacity:1; 
     border:none;
     width:100px;
     height: 100px;
@@ -170,12 +167,11 @@ Continuing are preivous code let's add an ease-in-out timing-function. It's a li
 
 ```css
  .square1 {
-    opacity:1; 
     border:none;
     width:100px;
     height: 100px;
     background-color: red;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease;
    }
 
    .square1:hover {
@@ -194,7 +190,7 @@ Now let's visit with the last property: the transition-delay.
 
 <h3 style="color:#3CCAE6">transition-delay</h3>
 
-Creates a delay between when a transition could start and when it actually does. So if we set a delay on our previous example when we hover over the square it will take a second before it starts like so. 
+Creates a delay between when a transition starts and when it actually does. So if we set a delay on our previous example when we hover over the square it will take a second before it starts like so. 
 
 
 **Code**
