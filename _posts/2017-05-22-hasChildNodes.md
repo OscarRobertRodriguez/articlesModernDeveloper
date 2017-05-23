@@ -1,6 +1,28 @@
 ---
-published: false
+layout: post
+title:  "hasChildNodes"
+categories: jekyll update
 ---
-## A New Post
+### Question:
+Explain how the `Node` `appendChild` method works and give at least one example of its usage.
+<hr>
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+
+The `hasChildNodes` property is used to see if an element has children nodes it will return a boolean value. 
+
+```javascript
+ 
+ /*
+   <ul>
+       <li></li>
+       <li></li>
+       <li></li>
+   </ul>
+
+  */
+ 
+  var ul = document.querySelector('ul');
+
+  console.log(ul.hasChildNodes());  
+  // returns true 
+```
