@@ -1,6 +1,18 @@
 ---
-published: false
+layout: post
+title:  "RangeError"
+categories: jekyll update
 ---
-## A New Post
+### Question:
+Describe the built-in RangeError type and give at least one example in which this error type will be thrown.
+<hr>
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+
+The RangeError is a incorrect use of a number error for a given property most commonly occurs with Number properties like Number.toFixed(). 
+
+
+```javascript
+ // if i were to do this 
+ Number.toFixed(-1);
+ // oh oh it throws a rangeError because there can't be any negative number give to this property 
+```
