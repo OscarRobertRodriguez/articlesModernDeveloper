@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "RangeError"
+title:  "SyntaxError"
 categories: jekyll update
 ---
 ### Question:
