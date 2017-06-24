@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "range character"
+title:  "children() DOM"
 categories: jekyll update
 ---
 
