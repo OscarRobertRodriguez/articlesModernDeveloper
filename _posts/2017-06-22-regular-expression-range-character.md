@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Character Classes"
+title:  "range character"
 categories: jekyll update
 ---
 
@@ -28,6 +28,8 @@ We can also have other variations such as [a-z] to target all lowercase letters 
  console.log(matches);
  // returns ['super', 'girl']; 
 ```
+
+
 
 
 
