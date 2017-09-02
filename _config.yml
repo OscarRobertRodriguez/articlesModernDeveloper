@@ -38,4 +38,4 @@ analytics: UA-71358787-1
 
 version: 0.8
 
-gems: [jekyll-paginate, jekyll-seo-tag]
+plugins: [jekyll-paginate, jekyll-seo-tag]
